@@ -3,6 +3,8 @@
 const mongoose = require('mongoose')
 const app = require('express')()
 
+app.use('/', require('./routes/index'))
+
 mongoose
   .connect('mongodb://localhost:27017/kingdom', {
     useNewUrlParser: true,
