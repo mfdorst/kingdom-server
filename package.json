@@ -1,0 +1,24 @@
+{
+  "name": "kingdom-server",
+  "version": "0.0.0",
+  "description": "A text-only MMORPG/base-building game",
+  "main": "app.js",
+  "scripts": {
+    "format": "prettier --write \"**/*.{js,css,json,md}\"",
+    "pretest": "eslint --fix \"**/*.js\"",
+    "test": "",
+    "start": "node app.js"
+  },
+  "author": "Michael Dorst",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.9.9"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.1.5",
+    "prettier": "^2.0.4"
+  }
+}
