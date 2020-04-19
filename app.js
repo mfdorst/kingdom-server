@@ -1,7 +1,8 @@
 'use strict'
 
-const mongoose = require('mongoose')
 const app = require('express')()
+const config = require('./config')
+const mongoose = require('mongoose')
 
 app.use('/', require('./routes/index'))
 
@@ -21,3 +22,5 @@ mongoose
     console.error(err)
     process.exit(1)
   })
+
+app.listen(config.port, () => console.log(`Listening at http://localhost:${config.port}`))
