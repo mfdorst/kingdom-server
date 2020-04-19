@@ -6,7 +6,7 @@ const config = require('./config')
 const mongoose = require('mongoose')
 
 app.use(express.json())
-app.use(express.urlencoded())
+app.use(express.urlencoded({ extended: true }))
 app.use('/', require('./routes/index'))
 
 mongoose
